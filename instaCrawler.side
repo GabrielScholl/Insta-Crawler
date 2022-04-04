@@ -1,0 +1,42 @@
+{
+  "id": "2f6cbddb-e72b-414e-ae38-3599ebf779fc",
+  "version": "2.0",
+  "name": "instaCrawler",
+  "url": "https://www.instagram.com/google/",
+  "tests": [{
+    "id": "a4452554-1b0a-4199-8fa8-35e73af48c8a",
+    "name": "Untitled",
+    "commands": [{
+      "id": "91c404b7-2350-4209-bf17-edb2219660a3",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.instagram.com/google/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82e8ffab-53df-4d24-8dc6-eaedf3d2a830",
+      "comment": "",
+      "command": "",
+      "target": "css=.Y8-fY:nth-child(2) .g47SY ",
+      "targets": [],
+      "value": "googleFollowers"
+    }, {
+      "id": "865f10ac-b4e8-41c1-be49-6994dd4e99cf",
+      "comment": "",
+      "command": "echo",
+      "target": "${googleFollowers}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c3936ca2-7217-4dfa-b58c-8bca45fcab16",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a4452554-1b0a-4199-8fa8-35e73af48c8a"]
+  }],
+  "urls": ["https://www.instagram.com/google/"],
+  "plugins": []
+}
